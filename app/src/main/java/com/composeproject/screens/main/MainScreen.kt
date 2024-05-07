@@ -20,7 +20,7 @@ fun MainScreen() {
         }
 
         composable(
-            route = "/details",
+            route = "/details/{content}",
             arguments = listOf(navArgument("content") { type = NavType.StringType })
         ) { backStackEntry ->
             DetailsScreen(
